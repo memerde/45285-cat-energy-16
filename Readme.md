@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Hieronimus Optional](https://up.htmlacademy.ru/adaptive/16/user/45285).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Сорокин](https://htmlacademy.ru/profile/osorokin).
 
 ---
 
