@@ -2,47 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <h1 class="visually-hidedn">
-      Каталог магазина функционального питания для котов
-    </h1>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="http://placehold.it/33x38" class="page-logo__img1" width="33" height="38" alt="Кэт Энерджи">
-        <img src="http://placehold.it/101x18" class="page-logo__img2" width="101" height="18">
-      </a>
-      <nav class="main-menu">
+      <div class="container">
+        <a class="page-header__logo">
+          <img src="http://placehold.it/134x38" class="page-logo__img" width="134" height="38" alt="Кэт Энерджи">
+        </a>
+        <nav class="main-menu">
         <button class="main-menu__toggle" type="button">Открыть меню</button>
           <ul class="main-menu__list">
             <li class="main-menu__item"><a href="index.html">Главная</a></li>
             <li class="main-menu__item"><a href="catalog.html">Каталог продукции</a></li>
             <li class="main-menu__item">Подбор программы</li>
           </ul>
-      </nav>
+        </nav>
+      </div>
     </header>
-
-    <main>
+    <main class="page-main">
       <div class="container">
 
-        <section class="footer">
-          <img src="http://placehold.it/128x24" class="footer__logo" width="128" height="24" alt="Кэт Энерджи">
-          <div class="footer__wrapper">
-            <button class="footer__social">
-              VK
-            </button>
-            <button class="footer__social">
-              In
-            </button>
-            <button class="footer__social">
-              Fb
-            </button>
-          </div>
-          <a class="footer__academy" href="htmlacademy.ru">HTML Academy</a>
-          <img src="http://placehold.it/27x34" class="footer__academy-logo">
-        </section>
       </div>
     </main>
+    <footer class="page-footer">
+      <div class="container">
+        <a href="index.html" class="footer__logo"><img src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Кэт Энерджи"></a>
+        <div class="footer__wrapper">
+          <ul class="page-footer__social social">
+            <li class="social__item"><a href="" class="social__link">VK</a></li>
+            <li class="social__item"><a href="" class="social__link">In</a></li>
+            <li class="social__item"><a href="" class="social__link">Fb</a></li>
+          </ul>
+        </div>
+        <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип Академии" class="footer__academy-logo">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
