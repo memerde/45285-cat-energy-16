@@ -10,29 +10,31 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-      <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" class="page-logo__img" width="25" height="34" alt="Логотип Кэт Энерджи">
-        <img src="img/logo-mobile-header.svg" class="page-logo__text" width="100" height="20" alt="Логотип Кэт Энерджи">
-      </a>
-      <nav class="main-menu">
-        <button class="main-menu__toggle" type="button">Открыть меню</button>
-        <ul class="main-menu__list menu" >
-          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
-          <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="menu__item"><a class="menu__link">Подбор программы</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a href="index.html" class="page-header__logo">
+            <img src="/img/logo-mobile.svg" class="page-header__img" width="25" height="34" alt="Логотип Кэт Энерджи">
+            <img src="img/logo-mobile-header.svg" class="page-logo__text" width="100" height="20" alt="Логотип Кэт Энерджи">
+          </a>
+          <button class="page-header__menu-toggle" type="button"></button>
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list menu" >
+            <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="catalog.html" >Каталог продукции</a></li>
+            <li class="menu__item"><a class="menu__link">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
-      <div class="container">
+      <div class="page-main__container">
       </div>
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__container">
         <a href="index.html" class="page-footer__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи"></a>
         <div class="page-footer__wrapper">
           <ul class="page-footer__social social">
@@ -49,6 +51,5 @@
         </div>
       </div>
     </footer>
-  </div>
   </body>
 </html>

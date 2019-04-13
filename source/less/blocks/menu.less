@@ -1,6 +1,7 @@
 .menu {
   list-style: none;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -8,21 +9,21 @@
 }
 
 .menu__item {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid @border-top;
+  border-bottom: 1px solid @border-bottom;
   padding: 20px 0;
 }
 
 .menu__link {
   text-decoration: none;
-  color: #000000;
+  color: @menu-color;
   cursor: pointer;
-}
 
-.menu__link:hover {
-  color: #949494;
-}
+  &:hover {
+    color: #949494;
+  }
 
-.menu__link:active {
-  border-bottom: 2px solid #68b738;
+  &:active {
+    border-bottom: 2px solid @link-border;
+  }
 }
