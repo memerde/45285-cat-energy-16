@@ -1,6 +1,5 @@
 .home {
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
 }
 
 .home__title,
@@ -37,4 +36,16 @@
   width: 280px;
   min-height: 40px;
   margin-bottom: 22px;
+}
+
+@media (min-width: @tablet) {
+  .home {
+    background: none;
+  }
+
+  .home__img {
+    background: url("/img/index-can-tablet@1x.jpg") no-repeat;
+    width: 709px;
+    height: 609px;
+  }
 }
