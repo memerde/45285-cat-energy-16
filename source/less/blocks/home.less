@@ -1,4 +1,6 @@
 .home {
+  display: flex;
+  flex-direction: column;
   background: url("/img/index-background-mobile@1x.jpg") no-repeat;
 }
 
@@ -31,21 +33,54 @@
 }
 
 .home__button {
+  width: 100%;
   margin: 0 auto;
-  display: block;
-  width: 280px;
-  min-height: 40px;
+
   margin-bottom: 22px;
 }
 
 @media (min-width: @tablet) {
   .home {
+    padding: 0 30px;
     background: none;
+  }
+
+  .home__descript {
+    order: 1;
   }
 
   .home__img {
     background: url("/img/index-can-tablet@1x.jpg") no-repeat;
-    width: 709px;
+    width: 708px;
     height: 609px;
+    order: 3;
+    margin: -20px 0 0 0;
+    z-index: -1;
+  }
+
+  .home__title {
+    color: black;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 0 0 45px 90px;
+    text-align: left;
+    width: 420px;
+  }
+
+  .home__text {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 50px 90px;
+    text-align: left;
+    order: 2;
+  }
+
+  .home__button {
+    width: 245px;
+    order: 2;
+    margin: 0 0 0 90px;
   }
 }
