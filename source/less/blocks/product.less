@@ -11,8 +11,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   width: 80px;
-  margin: 20px 0 0 0;
-  padding: 0 0 20px 0;
+  margin: 0 0 20px;
   text-transform: uppercase;
 }
 
@@ -43,5 +42,30 @@
     box-sizing: border-box;
     width: 324px;
     padding: 0 39px 40px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .product {
+    margin: 0 0 50px;
+    padding: 0 39px 0;
+    background-color: grey; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 245px;
+  }
+
+  .product__title {
+    text-align: center;
+    width: 169px;
+  }
+
+  .product__info {
+    width: 169px;
+  }
+
+  .product__image {
+    margin-top: -50px;
   }
 }
