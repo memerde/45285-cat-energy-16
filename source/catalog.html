@@ -13,15 +13,15 @@
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a href="index.html" class="page-header__logo">
-            <img src="/img/logo-mobile.svg" class="page-header__img" width="25" height="34" alt="Логотип Кэт Энерджи">
-            <img src="img/logo-mobile-header.svg" class="page-logo__text" width="100" height="20" alt="Логотип Кэт Энерджи">
+            <div class="page-header__img"></div>
+            <div class="page-header__text"></div>
           </a>
           <button class="page-header__menu-toggle" type="button"></button>
         </div>
         <nav class="main-menu">
           <ul class="main-menu__list menu" >
-            <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
-            <li class="menu__item"><a class="menu__link">Каталог продукции</a></li>
+            <li class="menu__item"><a  href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--current" href="">Каталог продукции</a></li>
             <li class="menu__item"><a class="menu__link" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
@@ -51,7 +51,7 @@
                 </tr>
               </table>
             </div>
-            <button class="product__button button button--block">
+            <button class="product__button button" type="button">
               Заказать
             </button>
           </article>
@@ -204,7 +204,7 @@
             <img src="img/icon-plus-mobile.svg" width="30" height="30" class="catalog-more__img">
             <h3 class="catalog-more__title">Показать еще 100500 товаров</h3>
             <p class="catalog-more__text">На  самом деле вкусов гораздо больше!</p>
-            <button class="catalog-more__button button">
+            <button class="catalog-more__button button" type="button">
               Показать всё
             </button>
           </div>
@@ -214,15 +214,11 @@
           <h3 class="catalog-extra__title">Дополнительные товары</h3>
 
           <article class="catalog-extra__item product-extra">
-            <table class="product-extra__table">
-              <tr>
-                <td colspan="2" class="product-extra__title">Сахарозаменитель</td>
-              </tr>
-              <tr>
-                <td class="product-extra__amount">1 упаковка (100 г)</td>
-                <td class="product-extra__price">200 Р.</td>
-              </tr>
-            </table>
+            <div class="product-extra__table">
+                <h3 class="product-extra__title">Сахарозаменитель</h3>
+                <p class="product-extra__amount">1 упаковка (100 г)</p>
+                <p class="product-extra__price">200 Р.</p>
+            </div>
             <button class="product-extra__button button">
               Заказать
             </button>
@@ -230,54 +226,43 @@
 
           <article class="catalog-extra__item product-extra">
 
-            <table class="product-extra__table">
-              <tr>
-                <td colspan="2" class="product-extra__title">Питьевая вода</td>
-              </tr>
-              <tr>
-                <td class="product-extra__amount">5 литров</td>
-                <td class="product-extra__price">50 Р.</td>
-              </tr>
-            </table>
+            <div class="product-extra__table">
+              <h3 class="product-extra__title">Питьевая вода</h3>
+              <p class="product-extra__amount">5 литров</p>
+              <p class="product-extra__price">50 Р.</p>
+            </div>
             <button class="product-extra__button button">
               Заказать
             </button>
           </article>
 
           <article class="catalog-extra__item product-extra">
-            <table class="product-extra__table">
-              <tr>
-                <td colspan="2" class="product-extra__title">Молоко</td>
-              </tr>
-              <tr>
-                <td class="product-extra__amount">1 литр</td>
-                <td class="product-extra__price">100 Р.</td>
-              </tr>
-            </table>
+            <div class="product-extra__table">
+              <h3 class="product-extra__title">Молоко</h3>
+              <p class="product-extra__amount">1 литр</p>
+              <p class="product-extra__price">100 Р.</p>
+            </div>
             <button class="product-extra__button button">
               Заказать
             </button>
           </article>
 
           <article class="catalog-extra__item product-extra">
-            <table class="product-extra__table">
-              <tr>
-                <td colspan="2" class="product-extra__title">Витамины</td>
-              </tr>
-              <tr>
-                <td class="product-extra__amount">1 упаковка (30 г)</td>
-                <td class="product-extra__price">300 Р.</td>
-              </tr>
-            </table>
+            <div class="product-extra__table">
+              <h3 class="product-extra__title">Витамины</h3>
+              <p class="product-extra__amount">1 упаковка (30 г)</p>
+              <p class="product-extra__price">300 Р.</p>
+            </div>
             <button class="product-extra__button button">
               Заказать
             </button>
           </article>
-        </section>
 
-        <section class="special-offer">
-          <p class="special-offer__text">Закажите все и получите чехол для кота в подарок!</p>
+          <article class="catalog-extra__item product-extra">
+            <p class="special-offer__text">Закажите все и получите чехол для кота в подарок!
+            </p>
           <span class="special-offer__background"></span>
+          </article>
         </section>
       </div>
     </main>
