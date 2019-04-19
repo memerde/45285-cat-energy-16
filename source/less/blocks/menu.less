@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet) {
   .menu {
     display: flex;
     margin: 0 0 0 auto;
@@ -47,8 +47,16 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop) {
   .menu {
     font-size: 20px;
+  }
+
+  .menu__link {
+    color: white;
+  }
+
+  .menu__link--current {
+    border-bottom: 2px solid white;
   }
 }
