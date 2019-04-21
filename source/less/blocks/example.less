@@ -1,6 +1,5 @@
 .example {
   padding: 20px 20px 0;
-  background-color: @example-bg;
 }
 
 .example__title {
@@ -19,11 +18,71 @@
   margin: 0;
 }
 
+@media (min-width: @tablet) {
+  .example__advantages {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__advantages-text {
+    font-size: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-transform: uppercase;
+  }
+  .example__title {
+    padding-bottom: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 750px;
+    margin: 0 0 50px;
+  }
+
+  .example__advantages-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__item {
+    margin-right: 42px;
+    text-align: center;
+    border: 2px solid #CCC;
+    padding: 20px 0;
+    width: 162px;
+    box-sizing: border-box;
+  }
+
+  .example__item-title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    padding: 0;
+    background-color: red;
+  }
+
+  .example__item-text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    min-width: 130px;
+    position: relative;
+    margin-bottom: -19px;
+    background-color: white;
+    
+   
+
+  }
+}
+
 @media (min-width: @desktop) {
   .example {
     margin: 0 0 20px;
     padding: 0;
-    background-color: @example-bg;
   }
 
   .example__title {
