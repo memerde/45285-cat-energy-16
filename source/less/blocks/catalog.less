@@ -3,35 +3,35 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
-  margin: 0;
+  margin: 0 0 25px;
   padding: 20px 20px 30px 20px;
   border-top: 1px solid @border-top;
   border-bottom: 1px solid @border-bottom;
   display: block;
-  width: 100%;
+  
 }
 
 @media (min-width: @tablet) {
   .catalog__title {
     font-size: 60px;
-    margin: 0;
+    margin: 0 0 50px;
+    padding: 0;
+    width: 100%;
+    border: none;
   }
 
   .catalog {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
-    padding: 30px;
+    margin: 0 30px;
   }
 }
 
 @media (min-width: @desktop) {
-  .catalog {
-    padding: 0 110px;
-  }
   .catalog__title {
     padding: 0;
-    margin: 0 0 20px;
+    margin: 0 0 70px;
   }
+
 }
