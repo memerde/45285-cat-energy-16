@@ -1,12 +1,39 @@
-.catalog__title {
+.catalog__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   margin: 0;
   padding: 20px 20px 30px 20px;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid @border-top;
+  border-bottom: 1px solid @border-bottom;
   display: block;
-  width: 100%;
+}
+
+@media (min-width: @tablet) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+
+  .catalog__header {
+    font-size: 60px;
+    margin: 0 0 160px;
+    padding: 0;
+    width: 100%;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog {
+    margin: 0;
+  }
+
+  .catalog__header {
+    padding: 0;
+    margin: 0 0 170px;
+  }
 }

@@ -1,31 +1,92 @@
 .catalog-more {
   padding: 25px 20px 20px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid @border-bottom;
 }
 
 .catalog-more__img {
   display: block;
   margin: 0 auto;
   padding: 0 0 25px 0;
+  opacity: 0.3;
 }
 
 .catalog-more__title {
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding: 0 0 15px 0;
+  margin: 0 0 10px;
+  padding: 0;
 }
 
 .catalog-more__text {
   font-family: "Arial Regular", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   margin: 0;
   padding: 0 0 20px 0;
+}
+
+.catalog-more__button {
+  width: 100%;
+  display: block;
+  background-color: @border-bottom;
+  color: black;
+}
+
+@media (min-width: @tablet) {
+  .catalog-more {
+    display: flex;
+    width: 324px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 38px 40px;
+    border: 1px solid @grey;
+    margin-bottom: 24px;
+  }
+
+
+  .catalog-more__title {
+    font-size: 20px;
+    width: 140px;
+    margin: 0 auto 25px;
+  }
+
+  .catalog-more__text {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    width: 170px;
+  }
+
+  .catalog-more__button {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog-more {
+    background-color: tomato;
+    display: block;
+    box-sizing: border-box;
+    width: 245px;
+    padding: 0 39px 0;
+  }
+
+  .catalog-more__title {
+
+    margin: 0;
+  }
+
+  .catalog-more__text {
+    margin: 0;
+  }
+
+  .catalog-more__button {
+    margin: 0;
+  }
 }

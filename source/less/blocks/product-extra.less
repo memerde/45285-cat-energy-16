@@ -1,33 +1,92 @@
 .product-extra {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid @border-bottom;
+  padding-bottom: 15px;
 }
 
-.product-extra__title {
+.product-extra__header {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
-  padding: 10px 0 10px 0;
+  font-weight: 400;
+  padding: 15px 0 0 0;
+  margin: 0;
   text-transform: uppercase;
+  width: 100%;
 }
 
-.product-extra__amount,
-.product-extra__price {
+.product-extra__descript {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
-  font-weight: 400;
   font-family: "Arial Regular", sans-serif;
-  padding: 0 0 10px 0;
+  padding: 0;
 }
 
-.product-extra__price {
-  text-align: right;
-}
-
-.product-extra__table {
-  width: 280px;
+.product-extra__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .product-extra__button {
-  margin: 0 0 15px 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: @tablet) {
+  .product-extra {
+    box-sizing: border-box;
+    margin: 0 30px;
+    padding: 20px 39px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    border-right: 1px solid @border-bottom;
+    border-left: 1px solid @border-bottom;
+  }
+
+  .product-extra:first-child {
+    border-top: 1px solid @border-bottom;
+  }
+
+  .product-extra__header {
+    width: 340px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 25px;
+  }
+
+  .product-extra__descript {
+    font-size: 16px;
+  }
+
+  .product-extra__descript span:last-child {
+    width: 96px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop) {
+  .product-extra {
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0 0 30px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    border-bottom: none;
+    border-top: 1px solid lightgrey;
+  }
+
+  .product-extra__header {
+    width: 325px;
+    margin: 0;
+  }
+
+  .product-extra__button {
+    width: 245px;
+    margin: 0;
+  }
 }

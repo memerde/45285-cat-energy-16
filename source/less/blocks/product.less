@@ -1,37 +1,110 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 2px solid #ededed;
+  padding: 0 20px 20px;
 }
 
-.product__title {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: "Oswald", "Arial", sans-serif;
-  width: 80px;
-  margin: 20px 0 0 0;
-  padding: 0 0 20px 0;
-  text-transform: uppercase;
+.product--showall {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
 }
 
-.product__info-wrapper {
-  margin-bottom: 20px;
+.product__header--showall {
+  margin: 25px 0 10px;
+}
+
+.product__descript--showall {
+  margin: 0 0 25px;
 }
 
 .product__info {
+  margin-top: 10px;
   width: 140px;
-  font-size: 12px;
-  line-height: 16px;
+}
+
+.product__header {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-family: "Arial Regular", sans-serif;
+  text-transform: uppercase;
 }
 
-.product__td {
-  text-align: right;
+.product__descript {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 12px;
 }
 
-.product__button {
-  margin-bottom: 25px;
+@media (min-width: @tablet) {
+  .product {
+    padding: 0 38px 40px;
+    border: none;
+    box-sizing: border-box;
+    width: 324px;
+    background-color: @grey;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 70px;
+  }
+
+  .product--showall {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    padding-top: 55px;
+    justify-content: space-between;
+  }
+
+  .product__image {
+    margin-top: -50px;
+  }
+
+  .product__image-showall {
+    margin-bottom: 50px;
+  }
+
+  .product__info {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .product__header {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .product__header--showall {
+    width: 140px;
+    margin: 0 0 30px;
+  }
+
+  .product__descript {
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 5px;
+  }
+
+  .product__descript--showall {
+    border: none;
+    text-align: center;
+    width: 170px;
+    margin: 0 0 auto;
+    padding: 0;
+  }
+
+  .product__descript span {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .product {
+    width: 245px;
+    margin: 0 0 145px;
+  }
 }

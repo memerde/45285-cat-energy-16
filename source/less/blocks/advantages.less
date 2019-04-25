@@ -16,7 +16,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  width: 200px;
   margin: 0;
 }
 
@@ -29,32 +28,107 @@
 .advantages__item {
   display: flex;
   align-items: center;
-  padding: 0 0 20px 0;
+  padding: 0;
+  margin: 0 0 20px;
 }
 
-.advantages__icon--quality,
-.advantages__icon--powder,
-.advantages__icon--function,
-.advantages__icon--month {
+.advantages__icon {
   display: block;
+  flex-shrink: 0;
   width: 60px;
   height: 60px;
   margin: 0 20px 0 0;
-  background: #68b738 no-repeat center;
+  position: relative;
+  background: @adv-icon-bg no-repeat center;
 }
 
 .advantages__icon--quality {
-  background-image: url("../img/advantage-1.png");
+  background-image: url("/img/advantage-1.png");
 }
 
 .advantages__icon--powder {
-  background-image: url("../img/advantage-2.png");
+  background-image: url("/img/advantage-2.png");
 }
 
 .advantages__icon--function {
-  background-image: url("../img/advantage-3.png");
+  background-image: url("/img/advantage-3.png");
 }
 
 .advantages__icon--month {
-  background-image: url("../img/advantage-4.png");
+  background-image: url("/img/advantage-4.png");
+}
+
+@media (min-width: @tablet) {
+  .advantages__title {
+    font-size: 60px;
+    padding: 0;
+    margin: 0 0 70px;
+  }
+
+  .advantages__icon {
+
+    width: 80px;
+    height: 80px;
+    margin: 0 0 40px;
+  }
+
+  .advantages__icon::after {
+    font-family: "Oswald", "Arial", sans-serif;
+    left: 115px;
+    top: -105px;
+    position: absolute;
+    font-size: 281px;
+    color: @grey;
+    z-index: -1;
+  }
+
+  .advantages__icon--quality::after {
+    content: "1";
+  }
+
+  .advantages__icon--powder::after {
+    content: "2";
+  }
+
+  .advantages__icon--function::after {
+    content: "3";
+  }
+
+  .advantages__icon--month::after {
+    content: "4";
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .advantages__item {
+    display: table;
+    width: 324px;
+    margin: 0 0 130px;
+  }
+
+  .advantages__text {
+    width: 250px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .advantages {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .advantages__item {
+    display: table;
+    width: 245px;
+    margin: 0 0 130px;
+  }
 }
