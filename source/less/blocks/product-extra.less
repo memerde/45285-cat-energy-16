@@ -73,16 +73,28 @@
   .product-extra {
     display: flex;
     align-items: baseline;
-    margin: 10px 0 0 30px;
-    padding-bottom: 10px;
-    justify-content: space-between;
+    margin: 0;
+    padding: 20px 0 20px;
+    justify-content: flex-start;
     border-bottom: none;
     border-top: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
   }
 
   .product-extra__header {
     width: 325px;
     margin: 0;
+  }
+
+  .product-extra__descript span:first-child {
+    width: 245px;
+  }
+
+  .product-extra__descript span:last-child {
+    width: 80px;
+    text-align: left;
   }
 
   .product-extra__button {

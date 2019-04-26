@@ -1,15 +1,16 @@
 .home {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: url("/img/index-background-mobile@1x.jpg") no-repeat;
-  padding: 0 0 22px;
+  padding: 0 22px 22px;
 }
 
 .home__title,
 .home__text {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  color: @white-color;
+  color: @grey;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -34,13 +35,14 @@
 }
 
 .home__button {
-  margin: 0 20px;
+  width: 100%;
 }
 
 @media (min-width: @tablet) {
   .home {
     padding: 0 30px;
     background: none;
+    align-items: flex-start;
   }
 
   .home__descript {
@@ -86,18 +88,24 @@
 @media (min-width: @desktop) {
   .home {
     padding: 0;
-    margin: 0;
+    margin: 0 110px 85px;
+  }
+
+  .home__img {
+    margin: -550px 250px 0;
+    width: 552px;
+    height: 499px;
   }
 
   .home__title {
-    margin: 0 195px 40px;
+    margin: 0 0 40px;
   }
 
   .home__text {
-    margin: 0 195px 50px;
+    margin: 0 0 50px;
   }
 
   .home__button {
-    margin: 0 195px 270px;
+    margin: 0 0 270px;
   }
 }
