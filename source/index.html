@@ -20,6 +20,7 @@
             <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
             <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="33" height="38" alt="Кэт Энерджи">
           </picture>
+          <img class="page-header__logo-header" src="/img/logo-mobile-header.svg" width="101" height="118">
         </a>
         <button class="page-header__menu-toggle" type="button"></button>
       </div>
@@ -32,18 +33,32 @@
       </nav>
     </div>
   </header>
+
+
   <main class="page-main">
     <div class="page-main__container">
-      <section class="home">
+
+
+<section class="home">
+
+<picture>
+  <source media="(min-width: 1440px)" srcset="/img/index-background-desktop@1x.jpg 1x, /img/index-background-desktop@2x.jpg 2x">
+
+  <img class="home__img-bg" src="/img/index-background-mobile@1x.jpg" width="320" height="305"
+  srcset="/img/index-background-mobile@2x.jpg">
+</picture>
+
         <h2 class="home__title">Функциональное питание для котов</h2>
         <p class="home__text">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="/img/index-can-tablet@1x.jpg">
-          <img class="home__img" src="/img/index-can-mobile@1x.png" width="280" height="271" alt="Упаковка кошачьего корма">
-        </picture>
+<picture>
+  <source media="(min-width: 1440px)" srcset="/img/index-can-desktop@1x.png 1x, /img/index-can-desktop@2x.png 2x">
+  <source media="(min-width: 768px)" srcset="/img/index-can-tablet@1x.jpg 1x, /img/index-can-tablet@2x.jpg 2x">
+  <img class="home__img" src="/img/index-can-mobile@1x.png" width="280" height="271" alt="Упаковка кошачьего корма" srcset="/img/index-can-mobile@2x.png 2x">
+</picture>
         <button class="button home__button" type="button">Подобрать программу</button>
       </section>
+
+
       <section class="program-types">
         <article class="program-types__item program">
           <h3 class="program__title program__title--slim">
@@ -109,7 +124,7 @@
             </div>
           </div>
         </div>
-        <img src="img/before-mobile@1x.png" class="example__img" width="310" height="230" alt="Фото Кота Бориса до использования Cat Energy Slim">
+        <img src="img/before-mobile@1x.png 1x" class="example__img" width="310" height="230" alt="Фото Кота Бориса до использования Cat Energy Slim" srcset="img/before-mobile@2x.png 2x">
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -118,7 +133,8 @@
             ул. Большая Конюшенная, д.19/8 <span>Санкт-Петербург</span>
           </p>
         </div>
-        <img src="img/bg-map-mobile@1x.png" class="contacts__map" width="320" height="360" alt="Карта">
+        <img src="img/bg-map-mobile@1x.png" class="contacts__map" width="320" height="360" alt="Карта"
+        srcset="img/bg-map-mobile@2x.png 2x">
       </section>
     </div>
   </main>
