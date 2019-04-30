@@ -74,7 +74,7 @@
     display: flex;
     align-items: baseline;
     margin: 0;
-    padding: 20px 0 20px;
+    padding: 0;
     justify-content: flex-start;
     border-bottom: none;
     border-top: 1px solid lightgrey;
@@ -83,9 +83,14 @@
     box-sizing: border-box;
   }
 
+  .catalog-extra__wrapper article:last-child {
+    border-bottom: 1px solid lightgrey;
+  }
+
   .product-extra__header {
     width: 325px;
     margin: 0;
+    padding: 0;
   }
 
   .product-extra__descript span:first-child {
@@ -99,6 +104,8 @@
 
   .product-extra__button {
     width: 245px;
-    margin: 0;
+    padding: 13px 0;
+    margin: 13px 0;
+    font-size: 16px;
   }
 }
