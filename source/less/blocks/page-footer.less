@@ -1,5 +1,5 @@
 .page-footer__container {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
   padding: 40px 20px 0;
   background-color: @grey;
@@ -40,15 +40,16 @@
 @media (min-width: @tablet) {
   .page-footer {
     background-color: @grey;
-    padding: 30px 0;
+    padding: 30px 0 40px;
+    margin: 0;
   }
 
   .page-footer__container {
     width: 768px;
-    padding: 0 30px;
+    padding: 20px 30px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .page-footer__logo {
@@ -64,6 +65,12 @@
 
   .page-footer__academy {
     margin-right: 20px;
+    padding: 10px 0 0;
+  }
+
+  .page-footer__academy-logo {
+    margin: 0;
+    padding-top: 5px;
   }
 }
 
