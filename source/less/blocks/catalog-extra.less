@@ -2,6 +2,10 @@
   margin: 0 20px;
 }
 
+.contacts--catalog {
+  background-color: @grey;
+}
+
 .catalog-extra__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -17,12 +21,13 @@
   padding: 0;
 }
 
-
-
-
 @media (min-width: @tablet) {
   .catalog-extra {
-    margin: 0 0 20px;
+    margin: 0 0 75px;
+  }
+
+  .catalog-extra__wrapper {
+    margin-bottom: 70px;
   }
 
   .catalog-extra__header {
@@ -31,11 +36,15 @@
     border: none;
     margin: 0 0 50px;
   }
+
+  .contacts--catalog {
+    background-color: @grey;
+  }
 }
 
 @media (min-width: @desktop) {
   .catalog-extra {
-    margin: 0;
+    margin: 0 0 85px;
     padding: 0;
   }
 
