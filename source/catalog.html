@@ -11,19 +11,23 @@
 </head>
 
 <body>
-  <header class="page-header">
+   <header class="page-header">
     <div class="page-header__container">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
-          <div class="page-header__img"></div>
-          <div class="page-header__text"></div>
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="/img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="33" height="38" alt="Кэт Энерджи">
+          </picture>
+          <img class="page-header__logo-header" src="/img/logo-mobile-header.svg" width="101" height="118">
         </a>
         <button class="page-header__menu-toggle" type="button"></button>
       </div>
       <nav class="main-menu">
         <ul class="main-menu__list menu">
-          <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-          <li class="menu__item"><a class="menu__link menu__link--current" href="">Каталог продукции</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--current">Каталог продукции</a></li>
           <li class="menu__item"><a class="menu__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
@@ -208,11 +212,14 @@
           </div>
           <button class="product__button button" type="button">Заказать</button>
         </article>
+
+
         <article class="product product--showall">
           <picture>
           <source media="(min-width: 768px)" srcset="/img/icon-plus.svg">
           <img src="img/icon-plus-mobile.svg" width="30" height="30" class="product__image-showall">
         </picture>
+
           <h3 class="product__header product__header--showall">Показать еще 100500 товаров</h3>
           <p class="product__descript product__descript--showall">На самом деле вкусов гораздо больше!</p>
           <button class="product__button button button--grey" type="button">
@@ -268,19 +275,24 @@
 
     <div class="catalog-extra__item product-extra-offer">
 
-      <div class="product-extra-offer__wrapper">
+
+
+<div class="product-extra-offer__wrapper">
+
         <img src="/img/icon-gift.svg" width="55" height="60" alt="Иконка подарка">
 
-        <p class="product-extra-offer__text">Закажите все<br> и получите чехол для кота в подарок!</p>
-      </div>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="/img/gift-photo-desktop@1x.jpg 1x, /img/gift-photo-desktop@2x.jpg 2x">
+        <p class="product-extra-offer__text">
+          Закажите все<br> и получите чехол для кота в подарок!</p>
 
-          <source media="(min-width: 768px)" srcset="/img/gift-photo-tablet@1x.jpg 1x, /img/gift-photo-tablet@2x.jpg 2x">
+       <!-- <picture>
+          <source media="(min-width: 1440px)"
+          srcset="/img/gift-photo-desktop@1x.jpg 1x, /img/gift-photo-desktop@2x.jpg 2x">
 
-          <img src="gift-photo-mobile@1x.jpg 1x" width="280" height="289" srcset="gift-photo-mobile@2x.jpg 2x" class="product-extra-offer__bg">
-        </picture>
-    </div>
+          <source media="(min-width: 768px)"
+          srcset="/img/gift-photo-tablet@1x.jpg 1x, /img/gift-photo-tablet@2x.jpg 2x">
+
+          <img src="/img/gift-photo-mobile@1x.jpg 1x" width="280" height="289" srcset="/img/gift-photo-mobile@2x.jpg 2x" class="product-extra-offer__bg">
+        </picture>-->
 
 </div>
 

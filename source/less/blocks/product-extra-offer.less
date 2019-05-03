@@ -3,19 +3,31 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0 45px;
-  margin: 30px 0 0;
+  padding: 65px 0 45px;
+  margin: 45px 0 30px;
   height: 289px;
   box-sizing: border-box;
+   background-image: url("/img/gift-photo-mobile@1x.jpg");
+   width: 280px;
+   height: 289px;
+   @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .product-extra-offer__bg {
+      background-image: url("/img/gift-photo-mobile@2x.png");
+    }
+  }
 }
 
 .product-extra-offer__text {
   width: 165px;
   text-align: center;
   color: white;
-  padding: 0;
+  font-size: 16px;
+  padding: 0px 0 0;
   margin: 0;
 }
+
 
 @media (min-width: @tablet) {
   .product-extra-offer {
