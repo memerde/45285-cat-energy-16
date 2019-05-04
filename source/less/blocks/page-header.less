@@ -6,7 +6,7 @@
 .page-header__wrapper {
   display: flex;
   align-items: center;
-  padding: 10px 20px 15px;
+  padding: 12px 20px 15px;
 
   &:hover {
     opacity: 0.8;
@@ -17,9 +17,15 @@
   }
 }
 
-.page-header__logo img {
+.page-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo-image {
   width: 33px;
   height: 38px;
+  margin-right: 56px;
 }
 
 .page-header__menu-toggle {
@@ -32,10 +38,19 @@
   margin-top: 10px;
 }
 
+.page-header__logo-header {
+  width: 101px;
+  height: 18px;
+}
+
 @media (min-width: @tablet) {
   .page-header__logo img {
     width: 174px;
     height: 58px;
+  }
+
+  .page-header__logo-header {
+    display: none;
   }
 
   .page-header {
@@ -71,8 +86,8 @@
 
 @media (min-width: @desktop) {
   .page-header__logo img {
-    width: 174px;
-    height: 58px;
+    width: 202px;
+    height: 59px;
   }
 
   .page-header__img {

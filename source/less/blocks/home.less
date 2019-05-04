@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
-  padding: 0 22px 22px;
+  padding: 25px 22px 22px;
+  position: relative;
 }
 
 .home__title,
@@ -19,23 +19,32 @@
 .home__title {
   font-size: 36px;
   line-height: 36px;
-  padding-top: 25px;
-  padding-bottom: 18px;
+  margin-bottom: 25px;
 }
 
 .home__text {
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 36px;
+  margin-bottom: 25px;
 }
 
 .home__img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.home__img-bg {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .home__button {
   width: 100%;
+  font-size: 14px;
+  padding: 10px 0;
 }
 
 @media (min-width: @tablet) {
@@ -43,7 +52,8 @@
     background: none;
     display: flex;
     align-items: flex-start;
-    padding: 0 30px;
+    padding: 5px 30px 0;
+    margin-bottom: 532px;
   }
 
   .home__title {
@@ -51,7 +61,7 @@
     font-size: 60px;
     line-height: 60px;
     padding: 0;
-    margin: 0 0 45px 90px;
+    margin: 0 0 38px 85px;
     text-align: left;
     width: 420px;
   }
@@ -61,7 +71,7 @@
     font-size: 20px;
     text-transform: uppercase;
     padding: 0;
-    margin: 0 0 50px 90px;
+    margin: 0 0 40px 90px;
     text-align: left;
   }
 
@@ -70,19 +80,27 @@
     margin: 0 0 0 90px;
     font-size: 20px;
     order: 3;
+    padding: 15px 0;
   }
 
   .home__img {
     width: 709px;
-    margin: -150px 30px 0;
-    order: 2;
+    top: 205px;
+    left: 30px;
+    z-index: -2;
+    position: absolute;
+  }
+
+  .home__img-bg {
+    display: none;
   }
 }
 
 @media (min-width: @desktop) {
   .home {
     padding: 35px 80px 0;
-    margin: 0 110px 5px;
+    margin: 0 110px 271px;
+    position: static;
   }
 
   .home__title {
@@ -90,16 +108,30 @@
   }
 
   .home__text {
-    margin: 0 0 50px;
+    margin: 0 0 45px;
   }
 
   .home__button {
     margin: 0;
+    font-size: 20px;
+    padding: 15px 0;
   }
 
   .home__img {
     width: 552px;
     height: 499px;
     z-index: -1;
+    top: 140px;
+    left: 800px;
+    position: absolute;
+  }
+
+  .home__img-bg {
+    display: block;
+    z-index: -2;
+    position: absolute;
+    left: 50%;
+    width: 720px;
+    height: 696px;
   }
 }

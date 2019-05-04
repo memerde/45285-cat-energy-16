@@ -20,6 +20,7 @@
             <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
             <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="33" height="38" alt="Кэт Энерджи">
           </picture>
+          <img class="page-header__logo-header" src="/img/logo-mobile-header.svg" width="101" height="118">
         </a>
         <button class="page-header__menu-toggle" type="button"></button>
       </div>
@@ -35,12 +36,16 @@
   <main class="page-main">
     <div class="page-main__container">
       <section class="home">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="/img/index-background-desktop@1x.jpg 1x, /img/index-background-desktop@2x.jpg 2x">
+          <img class="home__img-bg" src="/img/index-background-mobile@1x.jpg" width="320" height="305" srcset="/img/index-background-mobile@2x.jpg">
+        </picture>
         <h2 class="home__title">Функциональное питание для котов</h2>
         <p class="home__text">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1440px)" srcset="/img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="/img/index-can-tablet@1x.jpg">
-          <img class="home__img" src="/img/index-can-mobile@1x.png" width="280" height="271" alt="Упаковка кошачьего корма">
+          <source media="(min-width: 1440px)" srcset="/img/index-can-desktop@1x.png 1x, /img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="/img/index-can-tablet@1x.jpg 1x, /img/index-can-tablet@2x.jpg 2x">
+          <img class="home__img" src="/img/index-can-mobile@1x.png" width="280" height="271" alt="Упаковка кошачьего корма" srcset="/img/index-can-mobile@2x.png 2x">
         </picture>
         <button class="button home__button" type="button">Подобрать программу</button>
       </section>
@@ -88,37 +93,44 @@
         </ul>
       </section>
       <section class="example">
-        <div>
+        <div class="example__allwrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
           <div class="example__advantages">
-            <div class="example__advantages-wrapper">
-              <div class="example__item-wrapper">
-                <ul>
-                  <li class="example__item-title">5 кг</li>
-                  <li class="example__item-text"><span>снижение веса</span></li>
-                </ul>
-                <ul>
-                  <li class="example__item-title">60 дней</li>
-                  <li class="example__item-text"><span>затрачено времени</span></li>
-                </ul>
-              </div>
-              <p class="example__advantages-text">Затраты на питание: <span>15 000 руб.</span></p>
+            <div class="example__item-wrapper">
+              <ul>
+                <li class="example__item-title">5 кг</li>
+                <li class="example__item-text"><span>снижение веса</span></li>
+              </ul>
+              <ul>
+                <li class="example__item-title">60 дней</li>
+                <li class="example__item-text"><span>затрачено времени</span></li>
+              </ul>
             </div>
+            <p class="example__advantages-text">Затраты на питание: <span>15 000 руб.</span></p>
           </div>
         </div>
-        <img src="img/before-mobile@1x.png" class="example__img" width="310" height="230" alt="Фото Кота Бориса до использования Cat Energy Slim">
+        <div class="example__img-container">
+          <img src="img/before-mobile@1x.png 1x" class="example__img" width="320" height="240" alt="Фото Кота Бориса до использования Cat Energy Slim" srcset="img/before-mobile@2x.png 2x">
+        </div>
+        <div class="example__before-after">
+          <p>Было</p>
+          <p>Стало</p>
+        </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <p class="contacts__text">Приглашаем к сотрудничеству диллеров!</p>
+          <p class="contacts__text">Приглашаем <br>к сотрудничеству дилеров!</p>
           <p class="contacts__adress">
             ул. Большая Конюшенная, д.19/8 <span>Санкт-Петербург</span>
           </p>
         </div>
-        <img src="img/bg-map-mobile@1x.png" class="contacts__map" width="320" height="360" alt="Карта">
+        <div class="contacts__map">
+          <iframe class="contacts__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556435936950!5m2!1sru!2sru" height="362">
+          </iframe>
+        </div>
       </section>
     </div>
   </main>
@@ -127,18 +139,19 @@
       <a href="index.html" class="page-footer__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи"></a>
       <div class="page-footer__wrapper">
         <ul class="page-footer__social social">
-          <li class="social__item"><a href="" class="social__link"><img class="social__icon" src="img/m-vk.svg" width="22" height="12" alt="Ссылка на группу Вконтакте"></a></li>
-          <li class="social__item"><a href="" class="social__link"><img width="16" height="16" class="social__icon" src="img/m-insta.svg" alt="Ссылка на профиль Инстаграм"></a></li>
-          <li class="social__item"><a href="" class="social__link"><img width="10" height="19" class="social__icon" src="img/m-fb.svg" alt="Ссылка на группу в Фейсбук"></a></li>
+          <li class="social__item"><a href="" class="social__link"><img class="social__icon social__icon--vk" src="img/icon-vk.svg" width="22" height="12" alt="Ссылка на группу Вконтакте"></a></li>
+          <li class="social__item"><a href="" class="social__link"><img width="16" height="16" class="social__icon social__icon--in" src="img/icon-insta.svg" alt="Ссылка на профиль Инстаграм"></a></li>
+          <li class="social__item"><a href="" class="social__link"><img width="10" height="19" class="social__icon social__icon--fb" src="img/icon-fb.svg" alt="Ссылка на группу в Фейсбук"></a></li>
         </ul>
       </div>
       <div class="page-footer__academy-wrapper">
         <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип Академии" class="page-footer__academy-logo">
         </a>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

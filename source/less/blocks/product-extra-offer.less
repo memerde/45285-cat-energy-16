@@ -1,36 +1,87 @@
-.product-extra-offer {
-  background: url("/img/gift-photo-mobile@1x.jpg")  no-repeat;
+.product-extra-offer__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0 45px;
-  margin: 30px 0 0;
+  padding: 65px 0 45px;
+  margin: 45px 0 30px;
   height: 289px;
   box-sizing: border-box;
+  background-image: url("/img/gift-photo-mobile@1x.jpg");
+  width: 280px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .product-extra-offer__wrapper {
+      background-image: url("/img/gift-photo-mobile@2x.png");
+    }
+  }
 }
 
 .product-extra-offer__text {
   width: 165px;
   text-align: center;
   color: white;
+  font-size: 16px;
   padding: 0;
   margin: 0;
 }
 
 @media (min-width: @tablet) {
-  .product-extra-offer {
-    padding: 0 120px 0 89px;
-    margin: 0 30px;
-    background: url("/img/gift-photo-tablet@1x.jpg")  no-repeat;
+  .product-extra-offer__wrapper {
+    display: flex;
     flex-direction: row;
     box-sizing: border-box;
     height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 89px;
+    margin: 0 30px;
+    background: url("/img/gift-photo-tablet@1x.jpg") no-repeat;
+    width: 708px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .product-extra-offer__wrapper {
+        background: url("/img/gift-photo-tablet@2x.png") no-repeat;
+      }
+    }
   }
 
   .product-extra-offer__text {
     text-align: left;
     font-size: 16px;
     line-height: 20px;
+    margin-right: 144px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .product-extra-offer {
+    margin: 0;
+    padding: 0;
+    width: 245px;
+    height: 287px;
+  }
+
+  .product-extra-offer__wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    padding: 60px 0 40px;
+    background: url("/img/gift-photo-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .product-extra-offer__wrapper {
+        background: url("/img/gift-photo-desktop@2x.png") no-repeat;
+      }
+    }
+  }
+
+  .product-extra-offer__text {
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 }
