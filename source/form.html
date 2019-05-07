@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header__container">
-        <div class="page-header__wrapper">
-          <a href="index.html" class="page-header__logo">
-            <img src="/img/logo-mobile.svg" class="page-header__img" width="25" height="34" alt="Логотип Кэт Энерджи">
-            <img src="img/logo-mobile-header.svg" class="page-logo__text" width="100" height="20" alt="Логотип Кэт Энерджи">
-          </a>
-          <button class="page-header__menu-toggle" type="button"></button>
-        </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list menu" >
-            <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
-            <li class="menu__item"><a class="menu__link" href="catalog.html" >Каталог продукции</a></li>
-            <li class="menu__item"><a class="menu__link">Подбор программы</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <main class="page-main">
-      <div class="page-main__container">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38" alt="Кэт Энерджи">
+          </picture>
+          <img class="page-header__logo-header" src="./img/logo-mobile-header.svg" width="101" height="118">
+        </a>
+        <button class="page-header__menu-toggle" type="button"></button>
       </div>
-    </main>
+      <nav class="main-menu">
+        <ul class="main-menu__list menu">
+          <li class="menu__item"><a class="menu__link menu__link--current">Главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="menu__item"><a class="menu__link" href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <footer class="page-footer">
-      <div class="page-footer__container">
-        <a href="index.html" class="page-footer__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи"></a>
-        <div class="page-footer__wrapper">
-          <ul class="page-footer__social social">
-            <li class="social__item"><a href="" class="social__link"><img class="social__icon" src="img/m-vk.svg" width="22" height="12" alt="Ссылка на группу Вконтакте"></a></li>
-            <li class="social__item"><a href="" class="social__link"><img width="16" height="16" class="social__icon" src="img/m-insta.svg" alt="Ссылка на профиль Инстаграм"></a></li>
-            <li class="social__item"><a href="" class="social__link"><img width="10" height="19" class="social__icon" src="img/m-fb.svg" alt="Ссылка на группу в Фейсбук"></a></li>
-          </ul>
-        </div>
-        <div class="page-footer__academy-wrapper">
-          <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип Академии" class="page-footer__academy-logo">
-          </a>
-        </div>
+    <div class="page-footer__container">
+      <a href="index.html" class="page-footer__logo"><img src="./img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи"></a>
+      <div class="page-footer__wrapper">
+        <ul class="page-footer__social social">
+          <li class="social__item"><a href="" class="social__link"><img class="social__icon social__icon--vk" src="./img/icon-vk.svg" width="22" height="12" alt="Ссылка на группу Вконтакте"></a></li>
+          <li class="social__item"><a href="" class="social__link"><img width="16" height="16" class="social__icon social__icon--in" src="./img/icon-insta.svg" alt="Ссылка на профиль Инстаграм"></a></li>
+          <li class="social__item"><a href="" class="social__link"><img width="10" height="19" class="social__icon social__icon--fb" src="./img/icon-fb.svg" alt="Ссылка на группу в Фейсбук"></a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="page-footer__academy-wrapper">
+        <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип Академии" class="page-footer__academy-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
