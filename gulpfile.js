@@ -12,6 +12,8 @@ var rename = require("gulp-rename");
 var gulp = require("gulp");
 var del = require("del");
 var posthtml = require("gulp-posthtml");
+var svgstore = require("gulp-svgstore");
+var include = require("posthtml-include");
 
 
 gulp.task("server", function () {
