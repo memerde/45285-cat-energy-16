@@ -11,6 +11,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var gulp = require("gulp");
 var del = require("del");
+var posthtml = require("gulp-posthtml");
 
 
 gulp.task("server", function () {
@@ -86,7 +87,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-//  "sprite",
+ "sprite",
   "html"
 ));
 
