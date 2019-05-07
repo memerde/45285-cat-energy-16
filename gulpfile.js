@@ -89,7 +89,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
- "sprite",
+  "sprite",
   "html"
 ));
 
