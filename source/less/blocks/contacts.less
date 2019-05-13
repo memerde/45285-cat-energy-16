@@ -9,10 +9,10 @@
 .contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto 27px;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .contacts__text {
@@ -21,11 +21,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 15px 0 0;
 }
 
 .contacts__adress {
-  width: 135px;
+  width: 145px;
   font-family: "Arial Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -61,6 +61,7 @@
 
   .contacts__wrapper {
     padding: 75px 70px 30px;
+    justify-content: space-between;
   }
 
   .contacts__adress {
@@ -117,8 +118,12 @@
     box-sizing: border-box;
   }
 
+  .contacts__text br {
+    display: block;
+  }
+
   .contacts__wrapper-catalog {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 
   .contacts__adress {

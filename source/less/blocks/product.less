@@ -1,8 +1,38 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 2px solid #ededed;
-  padding: 0 20px 20px;
+  padding: 0 18px 22px;
+  border: 1px solid @border-top;
+}
+
+.product__header {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 76px;
+  margin: 20px 0 10px;
+  padding: 0;
+}
+
+.product__pic-wrap { //дописать сюда ширину и высоту контейнера
+  padding: 0;
+  margin: 0;
+  width: ;
+}
+
+.product__info {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.product__descript {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 12px;
 }
 
 .product__button {
@@ -17,19 +47,9 @@
   padding-top: 25px;
 }
 
-.product__info {
-  margin-top: 10px;
-  width: 140px;
-}
 
-.product__header {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  width: 76px;
-}
+
+
 
 .product__header br {
   display: none;
@@ -43,12 +63,7 @@
   margin-bottom: 10px;
 }
 
-.product__descript {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  font-size: 12px;
-}
+
 
 .product__descript--showall {
   margin: 0 0 20px;
@@ -60,7 +75,7 @@
 
 @media (min-width: @tablet) {
   .product {
-    padding: 0 0 40px;
+    padding: 0 0 35px;
     border: none;
     box-sizing: border-box;
     width: 324px;
@@ -68,54 +83,80 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: -25px;
+    margin-bottom: -25px; //подтянуть ряды//
     margin-top: 165px;
   }
 
-  .product__descript {
-    font-size: 16px;
-    border-bottom: 1px solid #cdcdcd;
-    padding: 5px 0 0;
-    margin: 0 38px;
-  }
-
-  .product__descript--showall {
-    border: none;
-    text-align: center;
-    width: 170px;
-    margin: 0 0 auto;
+  .product__info {
+    margin-bottom: 35px;
+    width: 100%;
     padding: 0;
   }
 
-  .product--showall {
-    background-color: white;
-    border: 1px solid #e6e6e6;
-    justify-content: space-between;
-    padding: 50px 38px 40px;
-  }
-
-  .product__image {
-    margin-top: -50px;
-    width: 100%;
-  }
-
-  .product__image-showall {
-    margin-bottom: 50px;
-    width: 60px;
-    height: 60px;
-  }
-
-  .product__info {
-    margin-bottom: 40px;
-    width: 100%;
+  .product__pic-wrap {
+    width: auto;
+    height: 135px;
+    display: flex;
+    margin: 0;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
   }
 
   .product__header {
     font-size: 20px;
     text-align: center;
     width: 132px;
-    margin: 0 auto 20px;
+    margin: 0 auto 22px;
     padding: 0;
+  }
+
+  .product__descript {
+    font-size: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 0 0 2px;
+    margin: 0 38px;
+  }
+
+  .product__button {
+    margin: 0 0 5px;
+    width: 249px;
+  }
+
+  .product--showall {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    justify-content: space-between;
+    padding: 55px 38px 30px;
+  }
+
+  .product__image-showall {
+    margin-bottom: 48px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  .product__descript--showall {
+    border: none;
+    text-align: center;
+    width: 170px;
+    margin: 0 0 88px;
+    padding: 0;
+  }
+
+  .product__descript--taste {
+    padding-bottom: 4px;
+  }
+
+  .product__descript--price {
+    padding-bottom: 4px;
+  }
+
+
+  .product__image {
+    margin-top: -50px;
+    width: 100%;
   }
 
   .product__header--showall {
@@ -126,27 +167,13 @@
   .product__descript span {
     margin: 5px 0;
   }
-
-  .product__pic-wrap {
-    width: auto;
-    height: 135px;
-    display: flex;
-    margin: 0;
-    align-items: flex-end;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-
-  .product__button {
-    width: 249px;
-  }
 }
 
 @media (min-width: @desktop) {
   .product {
     width: 245px;
     margin: 162px 0 -20px;
-    padding: 15px 0 40px;
+    padding: 15px 0 35px;
   }
 
   .product__header {
@@ -164,7 +191,7 @@
     margin: 0 0 5px;
     padding: 0;
     align-items: flex-end;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
 
   .product__info {
@@ -176,7 +203,7 @@
   }
 
   .product--showall {
-    padding: 50px 38px 40px;
+    padding: 55px 38px 35px;
   }
 
   .product__image-showall {
