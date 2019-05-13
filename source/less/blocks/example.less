@@ -1,7 +1,7 @@
 .example {
   position: relative;
-  padding: 33px 0 0;
-  margin-bottom: 15px;
+  padding: 29px 0 0;
+  margin-bottom: 18px;
 }
 
 .example::after {
@@ -49,9 +49,6 @@
 }
 
 .example__text {
-  font-family: "Arial Regular", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   margin: 0 0 25px;
   width: 310px;
   padding: 0 20px 0;
@@ -73,7 +70,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0 19px;
   width: 123px;
   text-transform: uppercase;
 }
@@ -81,7 +78,7 @@
 .example__item-text span {
   text-align: center;
   width: 58px;
-  margin-top: -13px;
+  margin-top: -10px;
   font-size: 12px;
   line-height: 12px;
   background-color: @example-bg;
@@ -100,7 +97,7 @@
 }
 
 .example__img-container {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: @tablet) {
@@ -142,7 +139,7 @@
     width: 760px;
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 50px;
+    margin: 0 0 55px; // добавил 5пх чтобы опустить квадратики
     padding: 0 30px;
   }
 
@@ -159,7 +156,8 @@
     box-sizing: border-box;
     display: block;
     width: 162px;
-    padding-bottom: 15px;
+    padding-top: 22px; // добавил это чтобы отбить 5кг сверху
+    padding-bottom: 27px;
   }
 
   .example__item-text {
@@ -194,6 +192,11 @@
     padding-top: 10px;
   }
 
+  .example__advantages-text span {  //добавил этот спан чтобы опустить 15к
+    margin: 10px 0 0 0;
+    display: block;
+  }
+
   .example__img {
     margin: 0 auto;
     width: 677px;
@@ -221,13 +224,13 @@
   }
 
   .example__title {
-    margin: 0 0 160px;
+    margin: 0 0 157px;
     padding: 0;
   }
 
   .example__text {
     width: 435px;
-    margin: 0 0 65px;
+    margin: 0 0 68px;
     padding: 0;
   }
 
@@ -247,7 +250,7 @@
   }
 
   .example__item-wrapper ul {
-    padding-bottom: 50px;
+
     margin: 0 40px 0 0;
   }
 
@@ -256,7 +259,7 @@
   }
 
   .example__item-wrapper {
-    margin: 0;
+    margin: 0 0 58px;
     padding: 0;
     justify-content: flex-start;
     width: 570px;
@@ -288,7 +291,7 @@
     height: 462px;
     content: "";
     position: absolute;
-    top: 125px;
+    top: 122px;
     left: 0;
     z-index: -1;
   }
@@ -302,5 +305,13 @@
   .example__before-after p {
     margin: 0;
     padding: 0;
+  }
+
+  .example__item-title {
+    font-size: 30px;
+    box-sizing: border-box;
+    display: block;
+    width: 163px;
+    padding: 25px 0;
   }
 }

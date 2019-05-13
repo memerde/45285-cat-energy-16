@@ -2,8 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 22px 22px;
+  padding: 27px 20px 22px;
   position: relative;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px;
+  }
 }
 
 .home__title,
@@ -19,7 +26,7 @@
 .home__title {
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .home__text {
@@ -31,14 +38,8 @@
 .home__img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 5px;
-}
+  margin-bottom: 4px;
 
-.home__img-bg {
-  z-index: -2;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .home__button {
@@ -52,7 +53,7 @@
     background: none;
     display: flex;
     align-items: flex-start;
-    padding: 5px 30px 0;
+    padding: 2px 30px 0;
     margin-bottom: 532px;
   }
 
@@ -61,7 +62,7 @@
     font-size: 60px;
     line-height: 60px;
     padding: 0;
-    margin: 0 0 38px 85px;
+    margin: 0 0 43px 86px;
     text-align: left;
     width: 420px;
   }
@@ -71,7 +72,7 @@
     font-size: 20px;
     text-transform: uppercase;
     padding: 0;
-    margin: 0 0 40px 90px;
+    margin: 0 0 50px 90px;
     text-align: left;
   }
 
@@ -90,17 +91,30 @@
     z-index: -2;
     position: absolute;
   }
-
-  .home__img-bg {
-    display: none;
-  }
 }
 
 @media (min-width: @desktop) {
   .home {
-    padding: 35px 80px 0;
+    padding: 45px 80px 0;
     margin: 0 110px 271px;
-    position: static;
+  }
+
+  .home::after {
+    position: absolute;
+    content: "";
+    width: 720px;
+height: 720px;
+top: -178px;
+right: -110px;
+z-index: -3;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 
   .home__title {
@@ -108,7 +122,7 @@
   }
 
   .home__text {
-    margin: 0 0 45px;
+    margin: 0 0 55px;
   }
 
   .home__button {
@@ -118,20 +132,9 @@
   }
 
   .home__img {
-    width: 552px;
-    height: 499px;
-    z-index: -1;
-    top: 140px;
-    left: 800px;
-    position: absolute;
+    width: 550px;
+    top: -35px;
+    left: 450px;
   }
 
-  .home__img-bg {
-    display: block;
-    z-index: -2;
-    position: absolute;
-    left: 50%;
-    width: 720px;
-    height: 696px;
-  }
 }

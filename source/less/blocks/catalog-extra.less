@@ -32,9 +32,27 @@
 
   .catalog-extra__header {
     font-size: 36px;
-    padding-left: 69px;
+    padding-left: 30px;
     border: none;
     margin: 0 0 50px;
+    position: relative;
+  }
+
+  .catalog-extra__header span {
+    background-color: white;
+    padding: 0 39px;
+  }
+
+  .catalog-extra__header::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    z-index: -1;
+    color: red;
+    height: 3px;
+    background-color: green;
+    left: 0;
+    top: 15px;
   }
 
   .contacts--catalog {

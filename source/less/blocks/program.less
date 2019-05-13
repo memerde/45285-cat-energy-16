@@ -61,9 +61,6 @@
 }
 
 .program__descript {
-  font-family: "Arial Regular", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   margin: 0 0 20px;
   padding: 0 0 20px;
   border-bottom: 1px solid @border-program-descript;
@@ -94,20 +91,20 @@
 
 @media (min-width: @tablet) {
   .program {
-    padding: 80px 50px 62px;
+    padding: 80px 50px 65px;
     margin: 0 0 30px;
   }
 
   .program__title {
     font-size: 36px;
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     padding-bottom: 10px;
   }
 
   .program__title::after {
     position: absolute;
     top: 10px;
-    left: 400px;
+    left: 395px;
     width: 200px;
     height: 200px;
     background-size: 200px 200px;
@@ -124,10 +121,10 @@
 
   .program__title--slim::before {
     position: absolute;
-    top: -5px;
+    top: -3px;
     left: 425px;
-    width: 200px;
-    height: 200px;
+    width: 195px;
+    height: 195px;
     content: "";
     z-index: 1;
     background-image: url("../img/icon-cat-slim.svg");
@@ -136,8 +133,8 @@
 
   .program__title--pro::before {
     position: absolute;
-    top: 55px;
-    left: 365px;
+    top: 54px;
+    left: 361px;
     width: 268px;
     height: 112px;
     content: "";
@@ -156,7 +153,7 @@
     font-size: 16px;
     line-height: 24px;
     width: 375px;
-    margin: 0 0 55px;
+    margin: 0 0 57px;
     padding: 0;
     border: none;
   }
@@ -178,7 +175,7 @@
   }
 
   .program__title {
-    margin: 0 0 75px 160px;
+    margin: 0 0 70px 161px;
   }
 
   .program__link::after {
@@ -188,7 +185,7 @@
 
   .program__title::after {
     position: absolute;
-    top: -30px;
+    top: -35px;
     left: -160px;
     background-size: 100px 100px;
     width: 100px;
@@ -215,8 +212,8 @@
 
   .program__title--slim::before {
     position: absolute;
-    top: -35px;
-    left: -143px;
+    top: -40px;
+    left: -147px;
     width: 70px;
     height: 97px;
     content: "";
@@ -227,12 +224,21 @@
 
   .program__title--pro::before {
     position: absolute;
-    top: -10px;
-    left: -175px;
+    top: -13px;
+    left: -180px;
     width: 137px;
     content: "";
     z-index: 1;
     background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
   }
+
+.program__link::after {
+  position: absolute;
+  top: 5px;
+  left: 130px;
+  width: 30px;
+
+}
+
 }
