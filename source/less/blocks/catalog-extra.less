@@ -1,5 +1,9 @@
 .catalog-extra {
-  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 20px 5px;
+  padding: 26px 0 0;
 }
 
 .contacts--catalog {
@@ -11,9 +15,36 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  margin: 35px 0 0 0;
-  padding: 0 0 30px 0;
+  margin: 0 0 35px;
+  padding: 0;
   border-bottom: 1px solid @border-bottom;
+  position: relative;
+}
+
+.catalog-extra__header::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  z-index: -1;
+  height: 3px;
+  background-color: green;
+  left: 0;
+  top: 15px;
+}
+
+.catalog-extra__header span {
+  background-color: white;
+  padding: 0 22px 0 0;
+}
+
+.catalog-extra__wrapper {
+  margin-bottom: 42px;
+  padding: 0;
+}
+
+.catalog-extra__allwrapper {
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-extra__item {
@@ -40,7 +71,7 @@
     font-size: 36px;
     padding-left: 30px;
     border: none;
-    margin: 0 0 55px;
+    margin: 0 0 86px;
     position: relative;
   }
 
@@ -93,7 +124,7 @@
   }
 
   .catalog-extra__header {
-    margin: 0 0 50px 40px;
+    margin: 0 0 82px 40px;
   }
 
   .catalog-extra__header::after {

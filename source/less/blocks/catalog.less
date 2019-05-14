@@ -1,3 +1,9 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .catalog__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -5,16 +11,15 @@
   line-height: 60px;
   margin: 0;
   padding: 17px 20px 28px 20px;
-
-  display: block;
 }
 
 @media (min-width: @tablet) {
   .catalog {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 0 30px 90px;
+    margin: 0 30px 85px;
     padding-top: 5px;
   }
 
@@ -29,7 +34,7 @@
 
 @media (min-width: @desktop) {
   .catalog {
-    margin: 5px 0 100px;
+    margin: 5px 0 103px;
     padding: 10px 110px 0;
   }
 
