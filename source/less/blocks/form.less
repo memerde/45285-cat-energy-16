@@ -1,0 +1,176 @@
+.form {
+  padding: 35px;
+}
+
+.form__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
+}
+
+.form__header {
+  font-family: "Oswald", "Arial Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 46px;
+  color: #222222;
+}
+
+.form__descript {
+  font-family: "Oswald", "Arial Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 250px;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &--radio {
+    padding: 7px 0 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  &--contacts {
+    margin-bottom: 10px;
+  }
+
+  &--add {
+    margin-bottom: 0;
+  }
+}
+
+.form__label {
+  font-family: "Oswald", "Arial Regular", sans-serif;
+  font-size: 16px;
+  color: #222222;
+}
+
+.form__list {
+  font-family: "Oswald", "Arial Regular", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  color: #222222;
+
+  &--add {
+    margin-bottom: 11px;
+  }
+}
+
+.form__input::placeholder {
+  font-family: "Oswald", "Arial Regular", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__input {
+  box-sizing: border-box;
+  margin-left: 15px;
+  border: 1px solid grey;
+  padding: 15px 11px;
+  flex-grow: 2;
+}
+
+.form__item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  &--radio {
+    padding: 0 0 10px;
+  }
+
+  &--add {
+    padding: 0 0 10px;
+  }
+}
+
+.form__list--radio {
+  padding: 25px 0 0 25px;
+  border: 1px solid grey;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form__radio {
+  margin-left: 25px;
+}
+
+.form__list--radio input { // убирает отступы у радио
+  margin: 0;
+  padding: 0;
+}
+
+.form__title {
+  font-family: "Oswald", "Arial Regular", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+
+  &--contacts {
+    margin-bottom: 35px;
+  }
+
+  &--comments {
+    margin: 0 0 35px;
+    padding: 0;
+  }
+
+  &--add {
+    margin-bottom: 35px;
+  }
+}
+
+.form__title::after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 2px;
+  top: 15px;
+  right: -140px;
+  background-color: green;
+}
+
+.form__textarea-comments {
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  font-family: "Oswald", "Arial Regular", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid grey;
+  resize: none;
+  min-height: 150px;
+}
+
+.form__button {
+  padding: 10px 0;
+  margin-bottom: 20px
+}
+
+.form__required {
+  margin: 0 auto;
+}
+
+.form__checkbox {
+  font-size: 16px;
+  margin-left: 25px
+}
