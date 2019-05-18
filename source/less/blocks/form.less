@@ -41,7 +41,7 @@
   }
 
   &--contacts {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   &--add {
@@ -101,7 +101,12 @@
 
   &--phone {
     margin-left: 10px;
-    padding: 16px 0 14px 15px;
+    padding: 15px 0 14px 15px;
+  }
+
+  &--mail {
+    margin-left: 11px;
+    padding: 14px 0 14px 14px;
   }
 }
 
@@ -122,7 +127,7 @@
   }
 
   &--contacts {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 }
 
@@ -147,7 +152,7 @@
   position: relative;
 
   &--contacts {
-    margin-bottom: 31px;
+    margin-bottom: 34px;
   }
 
   &--comments {
@@ -169,7 +174,7 @@
   height: 3px;
   top: 12px;
   right: -20px;
-  background-color: @link-border; // ЗАМЕНИТЬ
+  background-color: @link-border;
 }
 
 .form__title--add::after {
@@ -179,7 +184,7 @@
   height: 3px;
   top: 13px;
   right: -20px;
-  background-color: @link-border; // ЗАМЕНИТЬ
+  background-color: @link-border;
 }
 
 .form__title--contacts span {
@@ -189,17 +194,16 @@
 .form__title--contacts span::after {
   position: absolute;
   content: "";
-  width: 100px;
+  width: 94px;
   height: 3px;
-  top: 19px;
-  right: -120px;
-  background-color: @link-border; // ЗАМЕНИТЬ
+  top: 21px;
+  right: -114px;
+  background-color: @link-border;
 }
 
 .form__textarea-comments {
   width: 280px;
-  padding: 10px 10px 10px 15px;
-  margin-bottom: 24px;
+  padding: 12px 10px 10px 15px;
   box-sizing: border-box;
   font-family: "Oswald", "Arial Regular", sans-serif;
   font-size: 16px;
@@ -208,6 +212,7 @@
   border: 1px solid grey;
   resize: none;
   min-height: 150px;
+  margin-bottom: 30px;
 }
 
 .form__button {
@@ -250,7 +255,6 @@
   left: -37px;
   width: 12px;
   height: 12px;
-
   box-sizing: border-box;
 }
 
@@ -279,7 +283,7 @@
 
   box-sizing: border-box;
 }
-
+// -------------------------------------------------------------------------------------------------
 @media (min-width: @tablet) {
   .form {
     width: 768px;
@@ -300,10 +304,10 @@
   }
 
   .form__descript {
-    margin: 0 0 70px;
     font-size: 20px;
     line-height: 30px;
     width: 370px;
+    margin: 0 0 68px;
   }
 
   .form__fieldset {
@@ -312,7 +316,7 @@
     }
 
     &--radio {
-      margin-bottom: 81px;
+      margin-bottom: 82px;
       padding: 0;
     }
 
@@ -330,6 +334,7 @@
 
   .form__label {
     font-size: 20px;
+    position: relative;
   }
 
   .form__input::placeholder {
@@ -379,8 +384,6 @@
   }
 
   .form__input {
-    position: relative;
-
     &--cat {
       margin-left: 19px;
     }
@@ -395,6 +398,41 @@
       padding-left: 17px;
     }
   }
+
+  .form__label--mail::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    right: -551px;
+    z-index: 2;
+  }
+
+  .form__label--phone::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: -531px;
+    z-index: 2;
+  }
+
+  .form__title-bg {
+    background-color: white;
+    padding: 0 37px;
+    margin-left: -38px;
+  }
+
+  .form__title--contacts span::after {
+    width: 0;
+  }
+
 
   .form__item--add input[type="checkbox"] + .form__checkbox::after {
     content: "";
@@ -421,9 +459,10 @@
 
   .form__title {
     font-size: 36px;
+    position: relative;
 
     &--contacts {
-      margin: 0 0 84px 0;
+      margin: 0 0 86px 0;
     }
 
     &--comments {
@@ -436,8 +475,47 @@
     }
   }
 
+  .form__title--contacts::after {   // зеленая полоска --------------------------
+    position: absolute;
+    content: "";
+    width: 768px;
+    height: 3px;
+    top: 18px;
+    left: -70px;
+    z-index: -1;
+    background-color: @link-border;
+  }
+
+  .form__title--comments::after {   // зеленая полоска --------------------------
+    position: absolute;
+    content: "";
+    width: 768px;
+    height: 3px;
+    top: 18px;
+    left: -70px;
+    z-index: -1;
+    background-color: @link-border;
+  }
+
+  .form__title--add::after {   // зеленая полоска --------------------------
+    position: absolute;
+    content: "";
+    width: 768px;
+    height: 3px;
+    top: 18px;
+    left: -70px;
+    z-index: -1;
+    background-color: @link-border;
+  }
+
   .form__title br {
     display: none;
+  }
+
+  .form__title--comments span {
+    background-color: white;
+    padding: 0 37px;
+    margin-left: -38px;
   }
 
   .form__textarea-comments {
@@ -445,7 +523,7 @@
     width: 630px;
     font-size: 20px;
     padding: 15px 20px;
-    margin-bottom: 66px;
+    margin-bottom: 70px;
   }
 
   .form__checkbox {
@@ -467,9 +545,38 @@
     font-size: 16px;
     padding-top: 15px;
   }
+
+  .form__radio {
+    padding-left: 12px;
+  }
+
+  .form__input--radio + .form__radio::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -46px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+  }
+
+  .form__input--radio:checked + .form__radio::before {
+
+    background-color: #68b738;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -36px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+  }
 }
 
-@media (min-width: @desktop) {
+@media (min-width: @desktop) {  // DEEEEEEEEEEEEEEEEEEEESKTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOP
   .form {
     width: 1440px;
     margin: 0 auto 82px;
