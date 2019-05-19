@@ -99,6 +99,8 @@
   padding: 15px 11px;
   flex-grow: 2;
   color: #111111;
+  font-size: 16px;
+  text-transform: uppercase;
 
   &--cat {
     margin-left: 12px;
@@ -113,6 +115,15 @@
   &--mail {
     margin-left: 11px;
     padding: 14px 0 14px 14px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    box-sizing: border-box;
   }
 }
 
@@ -255,6 +266,14 @@
   box-sizing: border-box;
 }
 
+.form__input--radio + .form__radio-label:hover::after {
+  border: 1px solid #bcbcbc;
+}
+
+.form__input--radio + .form__radio-label:active::after {
+  border: 1px solid #ececec;
+}
+
 .form__input--radio:checked + .form__radio-label::before {
 
   background-color: #68b738;
@@ -266,6 +285,15 @@
   width: 12px;
   height: 12px;
   box-sizing: border-box;
+}
+
+.form__input--radio:checked:active + .form__radio-label::before {
+  background-color: #d1e9c3;
+}
+
+.form__radio-label:active {
+  color: #222222;
+  opacity: 0.3;
 }
 
 .form__item--add input[type="checkbox"] + .form__checkbox::after {
