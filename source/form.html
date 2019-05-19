@@ -49,16 +49,16 @@
     </legend>
     <ul class="form__list form__list--cat">
       <li class="form__item form__item--cat">
-        <label class="form__label" for="name">Имя:*</label>
+        <label class="form__label form__label--cat" for="name">Имя:*</label>
         <input class="form__input form__input--cat" type="text" name="name" placeholder="Барсик" id="name">
       </li>
       <li class="form__item form__item--cat">
-        <label class="form__label" for="weight">Вес (кг):*</label>
-        <input class="form__input form__input--cat" type="text" name="name" placeholder="7" id="weight">
+        <label class="form__label form__label--cat" for="weight">Вес (кг):*</label>
+        <input class="form__input form__input--cat form__input--cat-weight" type="text" name="name" placeholder="7" id="weight">
       </li>
       <li class="form__item form__item--cat">
-        <label class="form__label" for="age">Возраст (лет):</label>
-        <input class="form__input form__input--cat" type="text" name="name" placeholder="7" id="age">
+        <label class="form__label form__label--cat form__label--cat-age" for="age">Возраст (лет):</label>
+        <input class="form__input form__input--cat form__input--cat-age" type="text" name="name" placeholder="7" id="age">
       </li>
     </ul>
   </fieldset>
@@ -70,15 +70,15 @@
       <li class="form__item form__item--radio">
 
         <input type="radio" value="loss" id="loss" name="result" class="visually-hidden form__input form__input--radio" checked>
-        <label class="form__radio" for="loss">Похудение</label>
+        <label class="form__radio-label" for="loss">Похудение</label>
       </li>
       <li class="form__item form__item--radio">
         <input type="radio" value="gain" id="gain" name="result" class="visually-hidden form__input form__input--radio">
-        <label class="form__radio" for="gain">Набор массы</label>
+        <label class="form__radio-label" for="gain">Набор массы</label>
       </li>
       <li class="form__item form__item--radio">
         <input type="radio" value="dontknow" id="dontknow" name="result" class="visually-hidden form__input form__input--radio">
-        <label class="form__radio" for="dontknow">Не знаю (нужен ваш совет)</label>
+        <label class="form__radio-label" for="dontknow">Не знаю (нужен ваш совет)</label>
       </li>
     </ul>
   </fieldset>
