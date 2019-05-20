@@ -18,6 +18,7 @@
 }
 
 .page-footer__academy {
+  color: #111111;
   display: flex;
   align-items: center;
   margin-top: 16px;
@@ -26,14 +27,39 @@
   padding: 0;
 }
 
-.page-footer__academy a {
-  color: #444444;
+.page-footer__academy:active {
+  color: #c8e0ba;
+}
+
+.page-footer__academy-link {
+  color: #111111;
+}
+
+.page-footer__academy-link:active {
+  color: #c8e0ba;
 }
 
 .page-footer__academy-logo {
   width: 40px;
   height: 44px;
   margin-left: 136px;
+  padding-top: 5px;
+}
+
+.page-footer__academy-logo:hover path {
+  fill: #68b738;
+}
+
+.page-footer__academy-logo:active path {
+  fill: #c8e0ba;
+}
+
+.page-footer__logo-svg:hover path {
+  fill: #3e3e3e;
+}
+
+.page-footer__logo-svg:active path {
+  fill: #6b6b6b;
 }
 
 @media (min-width: @tablet) {

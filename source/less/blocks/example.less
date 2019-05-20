@@ -4,6 +4,29 @@
   margin-bottom: 18px;
 }
 
+.example__before,
+.example__after {
+  border: none;
+  text-transform: uppercase;
+  background-color: @example-bg;
+}
+
+.example__slider {
+  width: 84px;
+  border: 1px solid #cdcdcd;
+  border-radius: 15px;
+  background-color: white;
+  height: 14px;
+  padding: 3px 6px;
+}
+
+.example__slider-inner {
+  width: 35px;
+  background-color: #68b738;
+  height: 6px;
+  border-radius: 15px;
+}
+
 .example::after {
   background-color: @example-bg;
   width: 320px;
@@ -27,7 +50,7 @@
   text-transform: uppercase;
   margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
-  padding: 0 58px;
+  padding: 0 55px;
 }
 
 .example__item-wrapper {
@@ -86,24 +109,70 @@
   display: block;
 }
 
- .example__advantages-text {
+.example__advantages-text {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-
   margin: 0 0 30px;
 }
 
 .example__img-container {
-  margin-bottom: 18px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: @tablet) {
   .example {
     padding: 0;
     margin: 0 0 45px;
+  }
+
+  .example__before,
+  .example__after {
+    font-size: 20px;
+  }
+
+  .example__slider {
+    width: 430px;
+    background-color: #dcdcdc;
+    border: none;
+    height: 6px;
+    margin-top: 9px;
+    position: relative;
+  }
+
+  .example__slider-inner {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    padding-bottom: 20px;
+    position: absolute;
+    top: -14px;
+    left: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px -3px rgba(0, 0, 0, 0.3);
+  }
+
+  .example__slider-inner:hover {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  }
+
+  .example__slider-inner:active {
+    border: 1px solid #68b738;
+  }
+
+  .example__slider-inner::after {
+    border-radius: 50%;
+    background-color: #68b738;
+    width: 8px;
+    height: 8px;
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 12px;
   }
 
   .example::after {
@@ -118,7 +187,8 @@
   }
 
   .example__before-after {
-    margin: 0 40px;
+    padding-top: 20px;
+    margin: 0 35px;
   }
 
   .example__before-after p {
@@ -156,7 +226,7 @@
     box-sizing: border-box;
     display: block;
     width: 162px;
-    padding-top: 22px; // добавил это чтобы отбить 5кг сверху
+    padding-top: 22px;
     padding-bottom: 27px;
   }
 

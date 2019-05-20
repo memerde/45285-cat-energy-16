@@ -523,7 +523,7 @@
     background-image: url("../img/tick.svg");
     content: "";
     position: absolute;
-    top: -11px;
+    top: -9px;
     left: -48px;
     width: 125px;
     height: 125px;
@@ -549,7 +549,7 @@
     }
   }
 
-  .form__title--contacts::after {   // зеленая полоска --------------------------
+  .form__title--contacts::after {
     position: absolute;
     content: "";
     width: 768px;
@@ -560,7 +560,7 @@
     background-color: @link-border;
   }
 
-  .form__title--comments::after {   // зеленая полоска --------------------------
+  .form__title--comments::after {
     position: absolute;
     content: "";
     width: 768px;
@@ -571,7 +571,7 @@
     background-color: @link-border;
   }
 
-  .form__title--add::after {   // зеленая полоска --------------------------
+  .form__title--add::after {
     position: absolute;
     content: "";
     width: 768px;
@@ -624,6 +624,11 @@
     padding-left: 12px;
   }
 
+  .form__radio-label:active,
+  .form__checkbox:active {
+    opacity: 0.3;
+  }
+
   .form__input--radio + .form__radio-label::after {
     content: "";
     position: absolute;
@@ -650,7 +655,7 @@
   }
 }
 
-@media (min-width: @desktop) {  // DEEEEEEEEEEEEEEEEEEEESKTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOP
+@media (min-width: @desktop) {
   .form {
     width: 1440px;
     margin: 0 auto 82px;
@@ -719,7 +724,7 @@
     }
 
     &--add {
-      margin-bottom: 26px;
+      margin-bottom: 23px;
       display: flex;
       justify-content: flex-start;
     }
@@ -727,6 +732,10 @@
 
   .form__item {
     margin-bottom: 20px;
+
+    &--cat {
+      margin-bottom: 16px;
+    }
 
     &--radio {
       padding: 0 0 15px 0;
