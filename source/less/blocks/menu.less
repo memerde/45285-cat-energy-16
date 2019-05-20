@@ -8,6 +8,11 @@
   margin: 0 auto;
 }
 
+.menu__list {
+  padding: 0;
+  list-style: none;
+}
+
 .menu__item {
   border-top: 1px solid @border-top;
 }
@@ -18,6 +23,7 @@
   cursor: pointer;
   padding: 20px 0;
   display: block;
+  outline: none;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -28,14 +34,21 @@
   }
 }
 
-.menu__link--catalog {
+.menu__link--underline {
   color: #111111;
 }
 
 @media (min-width: @tablet) {
   .menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu__list {
     display: flex;
-    margin: 0 0 0 auto;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     font-weight: 400;
   }
@@ -43,32 +56,55 @@
   .menu__item {
     margin: 0 0 0 35px;
     border: none;
+    padding: 0;
   }
 
   .menu__link--current {
-    padding-bottom: 6px;
-    border-bottom: 2px solid @link-border;
+    position: relative;
+  }
+
+  .menu__link--current::before {
+    position: absolute;
+    content: "";
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: @link-border;
   }
 }
 
 @media (min-width: @desktop) {
-  .menu {
+  .menu__link {
+    color: #f2f2f2;
     font-size: 20px;
   }
 
-  .menu__link {
-    color: #f2f2f2;
+  .menu__link--current::before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f2f2f2;
   }
 
-  .menu__link--current {
-    border-bottom: 2px solid white;
-  }
-
-  .menu__link--catalog {
+  .menu__link--other {
     color: #111111;
   }
 
-  .menu__link--current-catalog {
-    border-bottom: 2px solid #68b738;
+  .menu__link--current-other {
+    position: relative;
+  }
+
+  .menu__link--current-other::before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
   }
 }

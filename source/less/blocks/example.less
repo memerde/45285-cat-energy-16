@@ -1,7 +1,30 @@
 .example {
   position: relative;
-  padding: 33px 0 0;
-  margin-bottom: 15px;
+  padding: 29px 0 0;
+  margin-bottom: 18px;
+}
+
+.example__before,
+.example__after {
+  border: none;
+  text-transform: uppercase;
+  background-color: @example-bg;
+}
+
+.example__slider {
+  width: 84px;
+  border: 1px solid #cdcdcd;
+  border-radius: 15px;
+  background-color: white;
+  height: 14px;
+  padding: 3px 6px;
+}
+
+.example__slider-inner {
+  width: 35px;
+  background-color: #68b738;
+  height: 6px;
+  border-radius: 15px;
 }
 
 .example::after {
@@ -27,7 +50,7 @@
   text-transform: uppercase;
   margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
-  padding: 0 58px;
+  padding: 0 55px;
 }
 
 .example__item-wrapper {
@@ -49,11 +72,8 @@
 }
 
 .example__text {
-  font-family: "Arial Regular", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   margin: 0 0 25px;
-  width: 310px;
+  width: 312px;
   padding: 0 20px 0;
 }
 
@@ -73,7 +93,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0 19px;
   width: 123px;
   text-transform: uppercase;
 }
@@ -81,7 +101,7 @@
 .example__item-text span {
   text-align: center;
   width: 58px;
-  margin-top: -13px;
+  margin-top: -10px;
   font-size: 12px;
   line-height: 12px;
   background-color: @example-bg;
@@ -95,18 +115,64 @@
   text-transform: uppercase;
   width: 100%;
   text-align: center;
-
   margin: 0 0 30px;
 }
 
 .example__img-container {
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: @tablet) {
   .example {
     padding: 0;
     margin: 0 0 45px;
+  }
+
+  .example__before,
+  .example__after {
+    font-size: 20px;
+  }
+
+  .example__slider {
+    width: 430px;
+    background-color: #dcdcdc;
+    border: none;
+    height: 6px;
+    margin-top: 9px;
+    position: relative;
+  }
+
+  .example__slider-inner {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    padding-bottom: 20px;
+    position: absolute;
+    top: -14px;
+    left: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px -3px rgba(0, 0, 0, 0.3);
+  }
+
+  .example__slider-inner:hover {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  }
+
+  .example__slider-inner:active {
+    border: 1px solid #68b738;
+  }
+
+  .example__slider-inner::after {
+    border-radius: 50%;
+    background-color: #68b738;
+    width: 8px;
+    height: 8px;
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 12px;
   }
 
   .example::after {
@@ -121,7 +187,8 @@
   }
 
   .example__before-after {
-    margin: 0 40px;
+    padding-top: 20px;
+    margin: 0 35px;
   }
 
   .example__before-after p {
@@ -142,7 +209,7 @@
     width: 760px;
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 50px;
+    margin: 0 0 55px;
     padding: 0 30px;
   }
 
@@ -159,7 +226,8 @@
     box-sizing: border-box;
     display: block;
     width: 162px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom: 27px;
   }
 
   .example__item-text {
@@ -194,6 +262,11 @@
     padding-top: 10px;
   }
 
+  .example__advantages-text span {
+    margin: 10px 0 0 0;
+    display: block;
+  }
+
   .example__img {
     margin: 0 auto;
     width: 677px;
@@ -221,13 +294,13 @@
   }
 
   .example__title {
-    margin: 0 0 160px;
+    margin: 0 0 157px;
     padding: 0;
   }
 
   .example__text {
     width: 435px;
-    margin: 0 0 65px;
+    margin: 0 0 68px;
     padding: 0;
   }
 
@@ -247,7 +320,7 @@
   }
 
   .example__item-wrapper ul {
-    padding-bottom: 50px;
+
     margin: 0 40px 0 0;
   }
 
@@ -256,7 +329,7 @@
   }
 
   .example__item-wrapper {
-    margin: 0;
+    margin: 0 0 58px;
     padding: 0;
     justify-content: flex-start;
     width: 570px;
@@ -264,13 +337,9 @@
 
   .example__advantages-text {
     text-align: left;
-    width: 368px;
+    width: 350px;
     padding: 0;
     margin: 0;
-  }
-
-  .example__advantages-text span {
-    padding-left: 60px;
   }
 
   .example__img {
@@ -288,7 +357,7 @@
     height: 462px;
     content: "";
     position: absolute;
-    top: 125px;
+    top: 122px;
     left: 0;
     z-index: -1;
   }
@@ -302,5 +371,19 @@
   .example__before-after p {
     margin: 0;
     padding: 0;
+  }
+
+  .example__item-title {
+    font-size: 30px;
+    box-sizing: border-box;
+    display: block;
+    width: 163px;
+    padding: 25px 0;
+  }
+
+  .example__advantages-text span {
+    padding: 0 0 0 60px;
+    margin: 0;
+    display: inline-block;
   }
 }

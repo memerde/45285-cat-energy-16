@@ -1,84 +1,107 @@
-.page-footer__container {
+.page-footer {
   width: 320px;
   margin: 0 auto;
-  padding: 35px 20px 0;
+  padding: 38px 0 38px 20px;
   background-color: @grey;
 }
 
 .page-footer__logo {
   display: block;
-  margin: 0 auto;
+  margin: 0 0 25px 75px;
+  padding: 0;
   width: 130px;
-  padding-bottom: 25px;
 }
 
-.page-footer__wrapper {
-  margin: 0;
-  padding: 0;
+.page-footer__social {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
 
-.page-footer__academy-wrapper {
+.page-footer__academy {
+  color: #111111;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
 }
 
-.page-footer__academy {
-  padding-top: 20px;
-  color: @footer-font;
-  text-decoration: none;
-  font-family: "Arial Regular", sans-serif;
-  font-size: 16px;
+.page-footer__academy:active {
+  color: #c8e0ba;
+}
+
+.page-footer__academy-link {
+  color: #111111;
+}
+
+.page-footer__academy-link:active {
+  color: #c8e0ba;
 }
 
 .page-footer__academy-logo {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 40px;
+  height: 44px;
+  margin-left: 136px;
+  padding-top: 5px;
+}
+
+.page-footer__academy-logo:hover path {
+  fill: #68b738;
+}
+
+.page-footer__academy-logo:active path {
+  fill: #c8e0ba;
+}
+
+.page-footer__logo-svg:hover path {
+  fill: #3e3e3e;
+}
+
+.page-footer__logo-svg:active path {
+  fill: #6b6b6b;
 }
 
 @media (min-width: @tablet) {
   .page-footer {
-    background-color: @grey;
-    padding: 30px 0 40px;
-    margin: 0;
-  }
-
-  .page-footer__container {
-    width: 768px;
-    padding: 20px 30px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    width: 768px;
+    background-color: @grey;
+    padding: 35px 0 40px;
+    margin: 0 auto;
   }
 
   .page-footer__logo {
-    margin: 0;
+    margin: 0 152px 0 30px;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
 
-  .page-footer__wrapper {
-    margin: 0;
-    padding: 0;
+  .page-footer__social {
     border: none;
   }
 
-  .page-footer__academy {
-    margin-right: 20px;
-    padding: 18px 0 0;
-  }
-
   .page-footer__academy-logo {
-    margin: 0;
-    padding-top: 5px;
+    margin-left: 15px;
+    width: 40px;
+    height: 45px;
   }
 }
 
 @media (min-width: @desktop) {
-  .page-footer__container {
+  .page-footer {
     width: 1440px;
-    padding: 20px 110px 0;
+    padding: 38px 0 55px 79px;
     margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    margin-right: 390px;
+  }
+
+  .page-footer__social {
+    margin-right: 350px;
   }
 
   .page-footer__container--catalog {
