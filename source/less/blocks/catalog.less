@@ -13,14 +13,22 @@
   padding: 17px 20px 28px 20px;
 }
 
+.catalog__add {
+  padding-top: 42px;
+}
+
 @media (min-width: @tablet) {
   .catalog {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 30px 85px;
+    margin: 0 30px 20px;
     padding-top: 5px;
+  }
+
+  .catalog__add {
+    padding-top: 92px;
   }
 
   .catalog__header {
@@ -34,12 +42,16 @@
 
 @media (min-width: @desktop) {
   .catalog {
-    margin: 5px 0 103px;
+    margin: 5px 0 50px;
     padding: 10px 110px 0;
   }
 
   .catalog__header {
     padding: 0;
     margin: 0;
+  }
+
+  .catalog__add {
+    padding-top: 69px;
   }
 }
