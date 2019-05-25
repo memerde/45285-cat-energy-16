@@ -86,12 +86,20 @@
 .program__link::after {
   position: absolute;
   top: 5px;
-  left: 95px;
-  width: 24px;
+  left: 130px;
+  width: 30px;
   height: 11px;
   content: "";
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+}
+
+.program__link:hover::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet) {
