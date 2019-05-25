@@ -1,8 +1,12 @@
 .page-footer {
+  width: 100%;
+  background-color: @grey;
+}
+
+.page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 38px 0 38px 20px;
-  background-color: @grey;
 }
 
 .page-footer__logo {
@@ -63,7 +67,7 @@
 }
 
 @media (min-width: @tablet) {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     width: 768px;
     background-color: @grey;
@@ -90,7 +94,7 @@
 }
 
 @media (min-width: @desktop) {
-  .page-footer {
+  .page-footer__wrapper {
     width: 1440px;
     padding: 38px 0 55px 79px;
     margin: 0 auto;
